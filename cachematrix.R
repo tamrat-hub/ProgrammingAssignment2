@@ -1,7 +1,11 @@
 ## First establish the matrix function
+
 ## Formulate the inverse of the matrix
+
 ## Will get the inverse of the matrix
+
 ## Write a short comment describing this function
+
 ## i is inverse
 
 makeCacheMatrix <- function(x = matrix()) {
