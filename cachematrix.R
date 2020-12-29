@@ -12,7 +12,7 @@ i <- NULL ## i is inverse
   getinverse <- function() i
   list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
-
+## return inverse of x
 
 ## Creating a cache of the function x
 
