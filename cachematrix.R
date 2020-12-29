@@ -1,15 +1,8 @@
-## First establish the matrix function
-
-## Formulate the inverse of the matrix
-
-## Will get the inverse of the matrix
-
-## Write a short comment describing this function
-
-## i is inverse
+## Matrix function
+## Inverse of the matrix function
 
 makeCacheMatrix <- function(x = matrix()) {
-i <- NULL
+i <- NULL ## i is inverse
   set <- function(y) {
     x <<- y
     i <<- NULL
@@ -17,20 +10,17 @@ i <- NULL
   get <- function() x
   setinverse <- function(inverse) i <<- inverse
   getinverse <- function() i
-  list(set = set, get = get,
-       setinverse = setinverse,
-       getinverse = getinverse)
+  list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
 
-
-## Take the above function and create a cache
+## Creating a cache of the function x
 
 cacheSolve <- function(x, ...) {  ## given
         
-        i <- x$getinverse()
+        i <- x$getinverse()   ##inverse function
   if (!is.null(i)) {
-    message("getting cached data")
+    message("getting cached data")  ## message for cached
     return(i)
   }
   data <- x$get()
